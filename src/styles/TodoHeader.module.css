@@ -1,0 +1,53 @@
+.todo-header {
+    display: grid;
+    justify-items: center;
+    height: 25rem;
+}
+
+.todo-header h1 {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    animation: text 4s forwards;
+}
+
+.todo-header__title {
+    display: flex;
+    width: 32rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.dark {
+    background-image: url("../images/bg-desktop-dark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.light {
+    background-image: url("../images/bg-desktop-light.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes text {
+    0% {
+        letter-spacing: 10px;
+    }
+    30% {
+        letter-spacing: 25px;
+    }
+    85% {
+        letter-spacing: 12px;
+    }
+    100% {
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    .todo-header__title {
+        padding: 0 2rem;
+    }
+}

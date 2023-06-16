@@ -1,0 +1,35 @@
+footer {
+    display: grid;
+    justify-items: center;
+    padding: 1rem 0;
+    font-family: cursive;
+    text-align: center;
+    color: hsl(233, 14%, 35%);
+}
+
+footer > div {
+    display: none;
+    justify-content: space-evenly;
+    width: 88%;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+}
+
+.dark-mode {
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+
+.light-mode {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+    footer > div {
+        display: flex;
+    }
+    footer > p {
+        padding-top: 2rem;
+    }
+}

@@ -1,0 +1,59 @@
+
+.todo-list__footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: cursive;
+    align-items: center;
+    width: 32rem;
+}
+
+.state {
+    display: flex;
+    gap: .7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.todo-list__footer > p {
+    font-size: 15px;
+}
+
+.action {
+    cursor: pointer;
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .todo-list__footer {
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+    .state {
+        display: none;
+    }
+}
