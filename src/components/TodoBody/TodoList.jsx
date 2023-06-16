@@ -1,8 +1,8 @@
-import React, { useContext, useState, Fragment } from "react";
+import React, { useContext,  Fragment } from "react";
 import TodoContext from "../../store/TodoContext";
 import useDrag from '../../hooks/use-drag';
 import TodoItem from "./TodoItem";
-import TodoListFooter from "./TodoListFooter";
+
 import TodoFooter from "../Footer/TodoFooter";
 
 import classes from '../../styles/TodoList.module.css';

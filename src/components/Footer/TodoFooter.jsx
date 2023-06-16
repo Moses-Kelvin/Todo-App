@@ -1,8 +1,4 @@
-import React, { useContext } from "react";
-
-import TodoContext from "../../store/TodoContext";
-
-import classes from '../../styles/TodoFooter.module.css';
+import React from "react";
 
 const TodoFooter = () => {
 

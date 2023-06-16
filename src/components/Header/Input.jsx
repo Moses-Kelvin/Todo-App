@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useRef } from "react";
 import TodoContext from "../../store/TodoContext";
 
 import classes from "../../styles/Input.module.css";
